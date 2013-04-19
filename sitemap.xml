@@ -1,0 +1,35 @@
+---
+# Remember to set production_url in your _config.yml file!
+layout: nil
+title : Sitemap
+icon: sitemap
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+{% for post in site.posts %}
+    {% unless post.hide %}
+        <url>
+            <loc>{{site.production_url}}{{ post.url }}</loc>
+            <lastmod>{{ post.date | date: '%Y-%m-%dT%H:%M:%S+02:00'}}</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>1.00</priority>
+        </url>
+    {% endunless %}
+{% endfor %}
+{% for page in site.pages %}
+    {% if page.layout != 'nil' and page.layout != 'feed' %}
+        <url>
+            <loc>{{site.production_url}}{{ page.url }}</loc>
+            {% if page.date %}
+                <lastmod>{{ page.date | date: '%Y-%m-%dT%H:%M:%S+02:00'}}</lastmod>
+               {% endif %}
+            <changefreq>weekly</changefreq>
+            <priority>0.80</priority>
+        </url>
+    {% endif %}
+{% endfor %}
+</urlset>

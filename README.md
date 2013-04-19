@@ -1,1 +1,1 @@
-Visit the blog at [https://csbill.github.io/blog](https://csbill.github.io/blog)
+Visit the blog at [http://csbill.github.io/blog](http://csbill.github.io/blog)

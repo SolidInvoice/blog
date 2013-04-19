@@ -1,8 +1,8 @@
 ---
 layout: post
-category : general
+category : General
 tagline: "Welcome to our new blog"
-tags : [general]
+tags : [General]
 excerpt : "Welcome to our new blog"
 ---
 {% include JB/setup %}
@@ -11,8 +11,6 @@ Welcome to the new blog for CSBill!
 
 Here you will find all the latest info regarding the open-source CSBill project, like new releases, upcoming features,
 security updates etc.
-
-## Overview
 
 ### What is CSBill?
 
@@ -31,8 +29,6 @@ The main features include:
 
 The application is web-based, so you can install it on any server and access it from **anywhere in the world**.
 
-## Technical
-
 ### Technology
 
 CSBill is created in the popular web language [PHP](http://php.net) and uses [MySQL](http://mysql.com) as the database storage.
@@ -49,7 +45,7 @@ Minimum requirements to run CSBill:
 * MySQL 5.1+
 * PDO MySQL
 
-## Getting CSBill
+### Getting CSBill
 
 CSBill is currently in pre-alpha, which means it is still in active development.
 
@@ -58,7 +54,7 @@ The first alpha release is planned for June 2013, with 3 alphas and 4 betas to f
 
 If you want to install and test the application and help find bugs, follow the instruction at [Github](https://github.com/CustomScripts/CSBill/blob/master/README.md)
 
-## Repository
+### Repository
 
 The current repository is located at [http://github.com/CustomScripts/CSBill](http://github.com/CustomScripts/CSBill).
 
@@ -67,9 +63,9 @@ Keep an eye on this blog for an update regarding the transition to the new repos
 
 ### Who is behind CSBill
 
-CSBill is created and maintained by [CustomScripts](http://customscripts.co.za), with [Pierre du Plessis](http://github.com/pierredup) as the leas developer.
+CSBill is created and maintained by [CustomScripts](http://shop.customscripts.co.za), with [Pierre du Plessis](http://github.com/pierredup) as the leas developer.
 
 
-## Questions / Support?
+### Questions / Support?
 
 If you need any support of have questions, you can post your message in our [google group](https://groups.google.com/forum/?fromgroups#!forum/csbill)

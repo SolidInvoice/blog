@@ -50,7 +50,7 @@
   color: #555;
   border-radius: 3px;
   text-decoration: none;
-  border: 1px dashed #cccccc; }
+  border: 1px solid #cccccc; }
 
 .tag_box a span {
   vertical-align: super;
@@ -85,6 +85,21 @@ footer {
 
 .page-header h1 small {
     font-size: 20px;
+}
+
+.page-header .social {
+    position: relative;
+    top: -22px;
+    font-size: 24px;
+}
+
+.page-header .social a {
+    color: #555555;
+}
+
+.page-header .social a:hover {
+    color: #2fa4e7;
+    text-decoration: none;
 }
 
 /*body {
