@@ -12,11 +12,11 @@ pygments: true
 title : CSBill Blog
 tagline:
 author :
-  name : Pierre du Plessis
+  name : CustomScripts
   email : info@customscripts.co.za
-  github : customscripts
+  github : CustomScripts
   twitter : customscripts
-  feedburner : feedname
+  feedburner : CsbillBlog
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt

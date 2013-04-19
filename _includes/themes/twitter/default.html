@@ -29,13 +29,15 @@
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+    <link href="http://feeds.feedburner.com/{{ site.author.feedbaname }}" rel="alternate" title="{{ page.title }}" type="application/atom+xml">
 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
   </head>
 
   <body>
     <div class="navbar">
       <div class="navbar-inner">
-        <div class="container-narrow">
+        <div class="container">
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
           <ul class="nav">
             {% assign pages_list = site.pages %}
@@ -52,6 +54,18 @@
         {{ content }}
       </div>
       <hr>
+      <div class="row-fluid">
+          <div class="span4">
+              <iframe src="http://ghbtns.com/github-btn.html?user=customscripts&repo=csbill&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+          </div>
+          <div class="span4">
+              <iframe src="http://ghbtns.com/github-btn.html?user=customscripts&repo=csbill&type=fork&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+          </div>
+          <div class="span4">
+              <iframe src="http://ghbtns.com/github-btn.html?user=customscripts&repo=csbill&type=follow&count=false&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="230" height="30"></iframe>
+          </div>
+          </div>
+
       <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
