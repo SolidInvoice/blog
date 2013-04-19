@@ -1,0 +1,24 @@
+---
+layout: page
+title: Welcome to the CSBill Blog
+---
+{% include JB/setup %}
+
+{% for post in site.posts %}
+<section class="postPreview">
+    <header>
+        <h3>
+            <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+
+	    <small>
+                <time datetime="{{ post.date | date_to_string }}" pubdate>
+                    {{ post.date | date_to_string }}
+                </time>
+            </small>
+        </h3>
+    </header>
+    <section>
+        {{ post.excerpt }}
+    </section>
+</section>
+{% endfor %}
