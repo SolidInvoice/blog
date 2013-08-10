@@ -13,7 +13,7 @@ icon: sitemap
 {% for post in site.posts %}
     {% unless post.hide %}
         <url>
-            <loc>{{site.production_url}}{{ post.url }}</loc>
+            <loc>http://{{site.production_url}}/{{ post.url }}</loc>
             <lastmod>{{ post.date | date: '%Y-%m-%dT%H:%M:%S+02:00'}}</lastmod>
             <changefreq>monthly</changefreq>
             <priority>1.00</priority>
@@ -23,7 +23,7 @@ icon: sitemap
 {% for page in site.pages %}
     {% if page.layout != 'nil' and page.layout != 'feed' %}
         <url>
-            <loc>{{site.production_url}}{{ page.url }}</loc>
+            <loc>http://{{site.production_url}}/{{ page.url }}</loc>
             <lastmod>{{ site.time | date: '%Y-%m-%dT%H:%M:%S+02:00'}}</lastmod>
             <changefreq>weekly</changefreq>
             <priority>0.80</priority>
