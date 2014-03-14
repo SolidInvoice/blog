@@ -3,7 +3,7 @@ layout: post
 categories : [General]
 tagline: "Public demo available"
 tags : [General, Releases]
-excerpt : "THe public demo of CSBill is available"
+excerpt : "The public demo of CSBill is available"
 ---
 {% include JB/setup %}
 
