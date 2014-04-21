@@ -23,4 +23,4 @@ This release creates the basic structure and functionality for creating and mana
 * Includes bootstrap based theme
 * Includes icons from font-awesome
 
-Please [download](https://github.com/CSBill/CSBill/releases/tag/0.1.0-alpha1) and test this release this release, and let us know of any [issues](https://github.com/CSBill/CSBill/issues) you may find.
+Please [download](https://github.com/CSBill/CSBill/releases/tag/0.1.0-alpha1) and test this release, and let us know of any [issues](https://github.com/CSBill/CSBill/issues) you may find.
