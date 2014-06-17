@@ -1,0 +1,16 @@
+---
+layout: post
+categories : [General, Releases]
+tagline: "0.1.0 Release"
+tags : [General, Releases]
+excerpt : "Version 0.1.0 released"
+---
+{% include JB/setup %}
+
+We are pleased to announce that the immediate availability of Release 0.1.0.
+
+This marks the first stable release of the 0.x series.
+
+For the full changelog, view the release on [github](https://github.com/CSBill/CSBill/releases/tag/0.1.0)
+
+Please [download](https://github.com/CSBill/CSBill/releases/tag/0.1.0) and test this release, and let us know of any [issues](https://github.com/CSBill/CSBill/issues) you may find.
