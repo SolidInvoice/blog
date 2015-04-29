@@ -4,7 +4,7 @@ permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
-pygments: true
+highlighter: pygments
 
 markdown: kramdown
 
@@ -15,7 +15,7 @@ title : CSBill Blog
 tagline:
 author :
   name : CustomScripts
-  email : info@customscripts.co.za
+  email : info@csbill.org
   github : CSBill
   twitter : CSBillApp
   feedburner : CsbillBlog
