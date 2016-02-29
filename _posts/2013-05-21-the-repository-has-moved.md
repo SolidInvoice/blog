@@ -4,6 +4,8 @@ categories : [General, Technical]
 tagline: "The repository has moved"
 tags : [General, Technical]
 excerpt : "The repository for CSBill on Github has moved"
+theme:
+    name: twitter
 ---
 {% include JB/setup %}
 

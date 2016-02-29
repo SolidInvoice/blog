@@ -4,6 +4,8 @@ category : General
 tagline: "Welcome to our new blog"
 tags : [General]
 excerpt : "Welcome to our new blog"
+theme:
+    name: twitter
 ---
 {% include JB/setup %}
 

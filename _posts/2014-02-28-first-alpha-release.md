@@ -4,6 +4,8 @@ categories : [General, Releases]
 tagline: "First alpha released"
 tags : [General, Releases]
 excerpt : "We are pleased to announce the release of the first alpha version"
+theme:
+    name: twitter
 ---
 {% include JB/setup %}
 

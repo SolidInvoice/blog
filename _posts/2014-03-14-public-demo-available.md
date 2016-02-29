@@ -4,6 +4,8 @@ categories : [General]
 tagline: "Public demo available"
 tags : [General, Releases]
 excerpt : "The public demo of CSBill is available"
+theme:
+    name: twitter
 ---
 {% include JB/setup %}
 
