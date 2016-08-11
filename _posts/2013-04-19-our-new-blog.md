@@ -5,7 +5,7 @@ tagline: "Welcome to our new blog"
 tags : [General]
 excerpt : "Welcome to our new blog"
 theme:
-    name: twitter
+    name: csbill
 ---
 {% include JB/setup %}
 

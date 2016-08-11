@@ -133,3 +133,5 @@ JB :
       provider: custom
   categories_list:
       provider: custom
+  posts_collate:
+      provider: custom

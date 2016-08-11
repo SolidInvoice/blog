@@ -1,9 +1,13 @@
 {% if tags_list.first[0] == null %}
     {% for tag in tags_list %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref" data-toggle="tooltip" title="{{ site.tags[tag].size }}">{{ tag }}</a></li>
+        <div class="item">
+            <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref" data-toggle="tooltip" title="{{ site.tags[tag].size }}">{{ tag }}</a>
+        </div>
     {% endfor %}
 {% else %}
     {% for tag in tags_list %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref" data-toggle="tooltip" title="{{ tag[1].size }}">{{ tag[0] }}</a></li>
+        <div class="item">
+            <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref" data-toggle="tooltip" title="{{ tag[1].size }}">{{ tag[0] }}</a>
+        </div>
     {% endfor %}
 {% endif %}

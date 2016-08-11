@@ -5,7 +5,7 @@ tagline: "First beta released"
 tags : [General, Releases]
 excerpt : "We are pleased to announce the release of the first beta version"
 theme:
-    name: twitter
+    name: csbill
 ---
 {% include JB/setup %}
 

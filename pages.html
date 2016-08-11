@@ -6,12 +6,12 @@ group: navigation
 icon: file-alt
 date: 2013-04-19 18:06:25
 theme:
-    name: twitter
+    name: csbill
 ---
 {% include JB/setup %}
 
-<h2>All Pages</h2>
-<ul>
-{% assign pages_list = site.pages %}
-{% include JB/pages_list %}
-</ul>
+<h3 class="ui dividing header">All Pages</h3>
+<div class="ui bulleted list">
+    {% assign pages_list = site.pages %}
+    {% include JB/pages_list %}
+</div>

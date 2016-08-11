@@ -1,0 +1,28 @@
+{% for post in posts_collate  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+    {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+
+    {% if forloop.first %}
+      <h2 class="ui dividing header">{{this_year}}</h2>
+      <div class="ui bulleted list">
+    {% endif %}
+
+    <div class="item">{{ post.date | date: "%B %e, %Y" }} &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></div>
+
+    {% if forloop.last %}
+      </ul>
+    {% else %}
+      {% if this_year != next_year %}
+        </div>
+        <h2 class="ui dividing header">{{next_year}}</h2>
+        <div class="ui bulleted list">
+      {% else %}
+        {% if this_month != next_month %}
+          </div>
+          <div class="ui bulleted list">
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
