@@ -1,0 +1,26 @@
+{% comment %}
+	Name:
+
+		Header
+
+	Description:
+
+		Site header.
+
+	Example:
+
+		{% include layout/header.html %}
+
+{% endcomment %}
+
+<header id="header">
+	<a href="{{ site.baseurl }}/" class="logo">
+		<strong>{{ site.title }}</strong> {{ site.tagline }}
+	</a>
+	<ul class="icons">
+		<li><a href="https://twitter.com/SolidInvoice" class="icon fa-twitter"><span class="label">{{ site.author.twitter }}</span></a></li>
+		<li><a href="https://github.com/SolidInvoice/SolidInvoice" class="icon fa-github"><span class="label">{{ site.author.github }}</span></a></li>
+		<li><a href="{{ site.baseurl }}/rss.xml" class="icon fa-rss"><span class="label">{{ site.author.feedburner }}</span></a></li>
+		<li><a href="https://solidinvoice.co" class="icon fa-globe"><span class="label">https://solidinvoice.co</span></a></li>
+	</ul>
+</header>

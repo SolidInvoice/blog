@@ -4,10 +4,10 @@ categories : [General]
 tagline: "Public demo available"
 tags : [General, Releases]
 excerpt : "The public demo of CSBill is available"
-theme:
-    name: csbill
 ---
-{% include JB/setup %}
+
+{:.box}
+#### Update! CSBill is now SolidInvoice! Read [this post]({% post_url 2017-08-18-a-new-era-is-coming %}) for more information
 
 We have just released a public demo of CSBill.
 

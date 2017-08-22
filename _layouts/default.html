@@ -1,6 +1,62 @@
+{% comment %}
+
+Name:
+
+Default layout
+
+Description:
+
+Basic HTML foundation for all pages.
+
+Example:
+
 ---
-theme :
-  name : csbill
+layout: default
 ---
-{% include JB/setup %}
-{% include themes/csbill/default.html %}
+
+{% endcomment %}
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <!--[if lte IE 8]>
+    <script src="{{ site.baseurl }}/assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css"/>
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie8.css"/><![endif]-->
+    {% include components/analytics.html %}
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.analytics.tag_manager.tracking_id }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="wrapper">
+    <div id="main">
+        <div class="inner">
+
+            {% include layout/header.html %}
+
+            {{ content }}
+
+        </div>
+    </div>
+
+    {% include layout/sidebar.html %}
+
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="{{ site.baseurl }}/assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,20 +1,15 @@
 ---
 layout: page
 title: Categories
+menuTitle: Categories
 header: Posts By Category
 group: navigation
 icon: book
-date: 2013-04-19 18:06:25
-theme:
-  name: csbill
+order: 3
 ---
-{% include JB/setup %}
 
 {% for category in site.categories %}
-  <h3 class="ui dividing header" id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h3>
-  <div class="ui bulleted list">
-    {% assign pages_list = category[1] %}
-    {% include JB/pages_list %}
-  </div>
+  <h3 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h3>
+    {% include components/pages_list.html pages_list=category %}
 {% endfor %}
 

@@ -4,14 +4,9 @@ title: Pages
 header: Pages
 group: navigation
 icon: file-alt
-date: 2013-04-19 18:06:25
-theme:
-    name: csbill
+icon: file-text-o
 ---
-{% include JB/setup %}
-
 <h3 class="ui dividing header">All Pages</h3>
 <div class="ui bulleted list">
-    {% assign pages_list = site.pages %}
-    {% include JB/pages_list %}
+    {% include components/pages_list.html pages_list=site.pages %}
 </div>

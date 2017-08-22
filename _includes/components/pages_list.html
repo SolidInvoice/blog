@@ -1,0 +1,9 @@
+<ul>
+{% for node in include.pages_list[1] %}
+    {% if node.title != null %}
+      <li>
+        <a href="{{ BASE_PATH }}{{node.url}}" class="item">{% if node.icon %}<i class="icon fa-{{ node.icon }}"></i> {% endif %}{{node.title}}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

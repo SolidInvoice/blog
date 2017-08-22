@@ -1,19 +1,16 @@
 ---
 layout: page
 title: Tags
+menuTitle: Tags
 header: Posts By Tag
 group: navigation
-icon: tags
-date: 2013-04-19 18:06:25
-theme:
-  name: csbill
+icon: tag
+order: 3
 ---
 {% include JB/setup %}
 
 {% for tag in site.tags %}
-  <h3 class="ui dividing header" id="{{ tag[0] }}-ref">{{ tag[0] }}</h3>
-  <div class="ui bulleted list">
-    {% assign pages_list = tag[1] %}
-    {% include JB/pages_list %}
-  </div>
+  <h3 id="{{ tag[0] }}-ref">{{ tag[0] }}</h3>
+
+  {% include components/pages_list.html pages_list=tag %}
 {% endfor %}

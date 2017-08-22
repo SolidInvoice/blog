@@ -1,31 +1,95 @@
 ---
 layout: page
-title: CSBill Blog
-date: 2013-04-19 18:06:25
+title: SolidInvoice Blog
 icon: home
-theme:
-    name: csbill
+menuTitle: Home
+order: 1
 ---
-{% include JB/setup %}
 
-<h3 class="ui dividing header">Latest Posts</h3>
-<div class="ui items">
-    {% for post in site.posts limit:5 %}
-        <div class="item">
-            <div class="content">
-                <h2 class="header">
-                    <a href="{{ BASE_PATH }}{{ post.url }}" class="header" style="display: inline">{{ post.title }}</a>
+{% comment %}
+Name:
 
-                </h2>
-                    <div class="meta">
-                        <time datetime="{{ post.date | date_to_string }}" pubdate>
-                            {{ post.date | date_to_string }}
-                        </time>
-                    </div>
-                <div class="description">
-                    {{ post.excerpt }}
-                </div>
-            </div>
+Blog Post list page
+
+Description:
+
+This is a simple list of paginated recent posts.
+
+Example:
+
+You can replace the for-loop with any of the included components:
+
+{% include components/features.html features=paginator.posts %}
+
+{% endcomment %}
+
+<!-- Post list -->
+{% for post in site.posts limit:5 %}
+
+<article>
+
+    <header>
+        <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.date | date: "%B %-d, %Y" }}</p>
+    </header>
+
+    <div class="row uniform">
+        <p>
+            {{ post.excerpt }}
+        </p>
+
+        <div class="12u$">
+            <ul class="actions">
+                <li><a href="{{ site.baseurl }}{{ post.url }}" class="button">Read More</a></li>
+            </ul>
         </div>
+    </div>
+</article>
+
+{% unless forloop.last %}
+<hr class="major"/>
+{% endunless %}
+
+{% endfor %}
+
+<!-- Pagination -->
+{% if paginator.total_pages > 1 %}
+
+<hr class="major"/>
+<ul class="pagination">
+
+    {% if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
+           class="button">Prev</a></li>
+    {% else %}
+    <li><span class="button disabled">Prev</span></li>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+
+    {% if page == paginator.page %}
+    {% assign class = 'page active' %}
+    {% else %}
+    {% assign class = 'page' %}
+    {% endif %}
+
+    {% if page == 1 %}
+    {% assign href = site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: '/page:num', '' %}
+    {% else %}
+    {% assign href = site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page %}
+    {% endif %}
+
+    <li><a href="{{ href }}" class="{{ class }}">{{ page }}</a></li>
+
     {% endfor %}
-</div>
+
+    {% if paginator.next_page %}
+    <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button">Next</a>
+    </li>
+    {% else %}
+    <li><span class="button disabled">Next</span></li>
+    {% endif %}
+
+</ul>
+
+{% endif %}

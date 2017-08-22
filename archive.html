@@ -1,14 +1,11 @@
 ---
 layout: page
 title : Archive
+menuTitle : Archive
 header : Post Archive
 group: navigation
 icon: folder-open
-date: 2013-04-19 18:06:25
-theme:
-    name: csbill
+order: 2
 ---
-{% include JB/setup %}
 
-{% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}
+{% include components/posts_collate.html posts=site.posts %}

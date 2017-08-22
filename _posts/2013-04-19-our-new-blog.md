@@ -4,10 +4,10 @@ category : General
 tagline: "Welcome to our new blog"
 tags : [General]
 excerpt : "Welcome to our new blog"
-theme:
-    name: csbill
 ---
-{% include JB/setup %}
+
+{:.box}
+#### Update! CSBill is now SolidInvoice! Read [this post]({% post_url 2017-08-18-a-new-era-is-coming %}) for more information
 
 Welcome to the new blog for CSBill!
 

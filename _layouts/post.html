@@ -1,7 +1,35 @@
 ---
-layout: default
-theme :
-    name : csbill
+layout: page
 ---
-{% include JB/setup %}
-{% include themes/csbill/post.html %}
+
+{% comment %}
+	Name:
+
+		Blog Post layout
+
+	Description:
+
+		A layout for individual Blog Posts.
+
+	Example:
+
+		---
+		layout: post
+		---
+
+{% endcomment %}
+
+<header>
+	<h1>{{ page.title }}</h1>
+	<p>{{ page.date | date: "%B %-d, %Y" }}</p>
+</header>
+
+{% if page.image %}
+	<span class="image fit">
+		<img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}">
+	</span>
+{% endif %}
+
+{{ content }}
+
+<hr>

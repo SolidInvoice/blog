@@ -4,10 +4,10 @@ categories : [General, Releases]
 tagline: "First alpha released"
 tags : [General, Releases]
 excerpt : "We are pleased to announce the release of the first alpha version"
-theme:
-    name: csbill
 ---
-{% include JB/setup %}
+
+{:.box}
+#### Update! CSBill is now SolidInvoice! Read [this post]({% post_url 2017-08-18-a-new-era-is-coming %}) for more information
 
 We are pleased to announce that the first alpha version, 0.1.0-alpha1, have been released.
 

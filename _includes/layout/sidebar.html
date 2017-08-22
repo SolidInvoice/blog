@@ -1,0 +1,62 @@
+{% comment %}
+	Name:
+
+		Sidebar
+
+	Description:
+
+		Site navigation, related content, contact info etc
+
+	Example:
+
+		{% include layout/sidebar.html %}
+
+{% endcomment %}
+
+<div id="sidebar">
+	<div class="inner">
+		<nav id="menu">
+			<header class="major">
+				<h2>Menu</h2>
+			</header>
+			<ul>
+				{% assign pages = site.pages | sort:"order"  %}
+
+				{% for node in pages %}
+					{% if node.menuTitle != null %}
+						<li>
+							{% if page.url == node.url %}
+							<a href="{{ BASE_PATH }}{{node.url}}" class="item active">{% if node.icon %}<i class="icon fa-{{ node.icon }}"></i> {% endif %}{{node.menuTitle}}</a>
+							{% else %}
+							<a href="{{ BASE_PATH }}{{node.url}}" class="item">{% if node.icon %}<i class="icon fa-{{ node.icon }}"></i> {% endif %}{{node.menuTitle}}</a>
+							{% endif %}
+						</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</nav>
+
+		<section>
+			<header class="major">
+				<h2>Recent Posts</h2>
+			</header>
+			<div class="mini-posts">
+				{% for post in site.posts limit:5 %}
+					<article>
+						{% if post.image %}
+						  <p class="image fit">
+						  	<img src="{{ post.image }}"/>
+						  </p>
+						{% endif %}
+						<a href="{{ site.baseurl }}{{ post.url }}" class="image">{{ post.title }}</a>
+						<p>{{ post.excerpt }}</p>
+					</article>
+				{% endfor %}
+			</div>
+		</section>
+
+		<footer id="footer">
+			<p class="copyright">&copy; SolidInvoice. All rights reserved.</p>
+		</footer>
+	</div>
+</div>

@@ -4,10 +4,10 @@ categories : [General, Releases]
 tagline: "First beta released"
 tags : [General, Releases]
 excerpt : "We are pleased to announce the release of the first beta version"
-theme:
-    name: csbill
 ---
-{% include JB/setup %}
+
+{:.box}
+#### Update! CSBill is now SolidInvoice! Read [this post]({% post_url 2017-08-18-a-new-era-is-coming %}) for more information
 
 We are pleased to announce that the first beta version, 0.1.0-beta1, have been released.
 

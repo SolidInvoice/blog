@@ -4,10 +4,10 @@ categories : [General, Technical]
 tagline: "The repository has moved"
 tags : [General, Technical]
 excerpt : "The repository for CSBill on Github has moved"
-theme:
-    name: csbill
 ---
-{% include JB/setup %}
+
+{:.box}
+#### Update! CSBill is now SolidInvoice! Read [this post]({% post_url 2017-08-18-a-new-era-is-coming %}) for more information
 
 In our previous blog post, we mentioned that we will soon move our repository to a new location.
 
