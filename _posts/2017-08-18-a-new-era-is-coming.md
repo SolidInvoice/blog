@@ -4,7 +4,7 @@ categories : [General]
 title: "On the road to a new era"
 tags : [General]
 excerpt : "SolidInvoice is moving into a new era with lots of updates. Version 2 is around the corner with a whole new look and feel and a lots of changes to improve usability and stability."
-image : /assets/images/sebastien-marchand-9747.jpg
+image : /assets/images/2017-08-18-a-new-era-is-coming/banner.jpg
 ---
 
 A lot of new changes has been happening in the last few months, and I am very excited about what is laying ahead.
@@ -39,6 +39,22 @@ Version 2 includes a brand new user interface and this design. While the origina
 The new design is more in line with a professional business application and offers a cleaner look and feel. It also gives some flexibility with customising the UI.
 Although the UI looks different, a lot of elements will still feel familiar and you can expect a lot of the functionality to still work the same.
 
+Here is a preview of what Version 2.0 will look like:
+
+{:class="image left"}
+[![Dashboard][0]][0]
+
+{:class="image left"}
+[![Clients][1]][1]
+
+{:class="image left"}
+[![Clients View][2]][2]
+
+{:class="image left"}
+[![Invoices][3]][3]
+
+{:class="clear"}
+
 ### New website and unified design
 
 I'm also proud to show off the brand new website for SolidInvoice, which has been completely re-designed from the old one. The website is available at [https://solidinvoice.co](https://solidinvoice.co).
@@ -56,3 +72,9 @@ If you want to contribute in getting version 2 stable, you can have a look at so
 You can also contribute to the documentation (which is in need of much love) which is located at [https://github.com/SolidInvoice/docs](https://github.com/SolidInvoice/docs).
 
 Be sure to keep an eye in this blog for future updates, as well as following SolidInvoice on twitter at [https://twitter.com/SolidInvoice](https://twitter.com/SolidInvoice) to keep up to date with future developments.
+
+
+[0]: {{ site.url }}/assets/images/2017-08-18-a-new-era-is-coming/screencapture-solidinvoice-dashboard-1503395002905.png
+[1]: {{ site.url }}/assets/images/2017-08-18-a-new-era-is-coming/screencapture-solidinvoice-clients-1503395380313.png
+[2]: {{ site.url }}/assets/images/2017-08-18-a-new-era-is-coming/screencapture-solidinvoice-clients-view-1-1503395394916.png
+[3]: {{ site.url }}/assets/images/2017-08-18-a-new-era-is-coming/screencapture-solidinvoice-invoices-view-1-1503396796414.png
