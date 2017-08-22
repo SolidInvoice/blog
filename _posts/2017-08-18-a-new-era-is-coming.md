@@ -45,13 +45,6 @@ I'm also proud to show off the brand new website for SolidInvoice, which has bee
 Along with the new website, I also felt that it was time to create a unified design for all the sites related to SolidInvoice. Previously the blog and documentation had different styles, but as of today, the blog and documentation share the same, clean design.
 Both the blog and the docs has been re-designed from the ground up, and you can expect any future online presence relating to SolidInvoice to share this same look and feel.
 
-### Upgrading from version 1 to version 2
-
-While working on version 2, there were a lot of decisions that needed to be made to improve the current database structure. Some decisions were easy to make and offered a clean upgrade path.
-Other decisions were a bit harder since it didn't offer a simple and easy upgrade path, but it was very necessary in order to advance the application to the next step.
-Due to these new improvements that needed to be made, there currently isn't a simple and easy way to upgrade to version 2. I might release an upgrade tool when version 2 stable is released which can be used to upgrade from version 1, but I also can't guarantee that I will spend time on an upgrade tool if there isn't a big need for it.
-If you really need to upgrade your application and can't do a fresh install and manually migrate the data, contact me at upgrade@solidinvoice.co and I should be able to offer some assistance. 
-
 ### The road forward
 
 There are still a lot of work to be done before version 2 stable will be released, but I'm very excited about the future of SolidInvoice. I'm going to continue working on refactoring and improving the code-base, as well as working on the stability of SolidInvoice and adding some new features.
