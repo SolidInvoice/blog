@@ -60,6 +60,10 @@ But the hosted version comes with dedicated premium support, ensuring someone is
 
 Just a couple of clicks and a quick form to fill in, and you can immediately start sending invoices. It takes juts a couple of minutes to get your instance set up and ready to use.
 
+#### Price
+
+The hosted option is available for only $20 per month. When signing up, you will get a free 7-day trial where you can enjoy all the benefits of the hosted option with no commitment.
+
 #### Sign up now
 
 If you would like to give SolidInvoice a spin, sign up now at [https://solidinvoice.co](https://solidinvoice.co/?utm_source=blog&utm_campaign=hosted_option)
